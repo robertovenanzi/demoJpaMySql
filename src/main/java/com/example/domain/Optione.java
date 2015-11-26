@@ -7,9 +7,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Entity(name = "optionEntity")
-@Table(name = "OPTION_TABLE")
-public class OptionEntity {
+
+@Entity
+public class Optione {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)

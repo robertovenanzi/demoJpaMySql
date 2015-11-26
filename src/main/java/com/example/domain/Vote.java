@@ -18,7 +18,7 @@ public class Vote {
 	
 	@ManyToOne
 	@JoinColumn(name="OPTION_ID")
-	private OptionEntity option;
+	private Optione optioni;
 
 	public Long getId() {
 		return id;
@@ -28,14 +28,15 @@ public class Vote {
 		this.id = id;
 	}
 
-	public OptionEntity getOption() {
-		return option;
+	public Optione getOptioni() {
+		return optioni;
 	}
 
-	public void setOption(OptionEntity option) {
-		this.option = option;
+	public void setOptioni(Optione optioni) {
+		this.optioni = optioni;
 	}
-	
+
+
 	
 
 }

@@ -8,7 +8,7 @@ import com.example.domain.Vote;
 
 public interface VoteRepository extends CrudRepository<Vote, Long> {
 	
-	@Query(value="select v.* from OptionEntity o, Vote v where o.POLL_ID = ?1 and v.OPTION_ID = o.OPTION_ID", nativeQuery = true)
+	@Query(value="select v.* from Optione o, Vote v where o.POLL_ID = ?1 and v.OPTION_ID = o.ID", nativeQuery = true)
 	public Iterable<Vote> findByPoll(Long pollId);
 
 }

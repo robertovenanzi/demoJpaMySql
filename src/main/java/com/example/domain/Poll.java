@@ -25,7 +25,7 @@ public class Poll {
 	@OneToMany(cascade=CascadeType.ALL)
 	@JoinColumn(name="POLL_ID")
 	@OrderBy
-	private Set<OptionEntity> options;
+	private Set<Optione> optioni;
 	
 	public long getId() {
 		return id;
@@ -39,12 +39,13 @@ public class Poll {
 	public void setQuestion(String question) {
 		this.question = question;
 	}
-	public Set<OptionEntity> getOptions() {
-		return options;
+	public Set<Optione> getOptioni() {
+		return optioni;
 	}
-	public void setOptions(Set<OptionEntity> options) {
-		this.options = options;
+	public void setOptioni(Set<Optione> optioni) {
+		this.optioni = optioni;
 	}
+	
 	
 	
 
